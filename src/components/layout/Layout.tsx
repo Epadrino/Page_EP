@@ -36,7 +36,7 @@ export const Layout: FC<PropsWithChildren<Props>> = ({ children, title }) => {
 			<Footer>
 				<div>
 					<SectionLefth>
-						<p>pagina creada por eduardo padrino</p>
+						<p>Pagina creada por Eduardo Padrino</p>
 					</SectionLefth>
 					<SectionRigth>
 						<section>
