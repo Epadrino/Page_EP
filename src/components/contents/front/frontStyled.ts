@@ -31,7 +31,7 @@ export const ContainerText = styled.div`
 	height: 90vh;
 	padding-left: 10vw;
 	h1 {
-		color: ${(props) => props.theme.colors.tertiary};
+		color: ${(props) => props.theme.colors.primary};
 		font-weight: 900;
 		@media ${device.mobileS} {
 			font-size: 300%;
@@ -47,7 +47,7 @@ export const ContainerText = styled.div`
 		}
 	}
 	h2 {
-		color: ${(props) => props.theme.colors.tertiary};
+		color: ${(props) => props.theme.colors.primary};
 		font-weight: 700;
 		font-size: 20px;
 	}
