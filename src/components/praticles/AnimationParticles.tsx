@@ -1,5 +1,5 @@
 import { useCallback, useContext } from 'react';
-import type { Engine } from 'tsparticles-engine';
+import type { Container, Engine } from 'tsparticles-engine';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { UIContext } from '@/context/ui';
@@ -13,12 +13,19 @@ export const AnimationParticles = () => {
 		await loadFull(engine);
 	}, []);
 
+	const particlesLoaded = useCallback(
+		async (container: Container | undefined) => {
+			await console.log(container);
+		},
+		[]
+	);
 	return (
 		<>
 			{theme === 'light' ? (
 				<Particles
 					id="tsparticles"
 					init={particlesInit}
+					loaded={particlesLoaded}
 					options={{
 						fpsLimit: 60,
 						interactivity: {
@@ -91,6 +98,7 @@ export const AnimationParticles = () => {
 				<Particles
 					id="tsparticles"
 					init={particlesInit}
+					loaded={particlesLoaded}
 					options={{
 						fpsLimit: 60,
 						interactivity: {
