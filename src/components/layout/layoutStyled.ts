@@ -6,7 +6,7 @@ export const Header = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 	position: fixed;
 	z-index: 30;
@@ -17,7 +17,7 @@ export const Header = styled.div`
 export const Footer = styled.div`
 	position: relative;
 	z-index: 30;
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 
 	background: ${(props) => props.theme.backgrounds.primary};

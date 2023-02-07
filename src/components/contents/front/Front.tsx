@@ -1,30 +1,27 @@
 import Image from 'next/image';
 import React from 'react';
-import {
-	Container,
-	ContainerImg,
-	ContainerText,
-	SubTitle,
-} from './frontStyled';
+import { Container, Box, ContainerImg, ContainerText } from './frontStyled';
 
 export const Front = () => {
 	return (
-		<>
+		<Container>
 			<Container>
 				<ContainerText>
-					<h1>Front Developer</h1>
-					<SubTitle>Diseños hecho realidad</SubTitle>
+					<h1>Eduardo E. Padrino A.</h1>
+					<h2>Desarrollador Frontend.</h2>
 				</ContainerText>
 			</Container>
-			<ContainerImg>
-				<Image
-					src="/images/fondo-azul-2.jpg"
-					alt="fondo"
-					sizes="100vw"
-					fill
-					priority
-				/>
-			</ContainerImg>
-		</>
+			<Box>
+				<ContainerImg>
+					<Image
+						src="/images/fondo-azul-2.jpg"
+						alt="fondo"
+						sizes="100vw"
+						fill
+						priority
+					/>
+				</ContainerImg>
+			</Box>
+		</Container>
 	);
 };

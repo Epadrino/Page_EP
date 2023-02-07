@@ -10,55 +10,6 @@ export const Container = styled.div`
 	background: ${(props) => props.theme.backgrounds.primary};
 	z-index: 10;
 `;
-export const Separator = styled.div`
-	position: absolute;
-	width: 100%;
-	height: 5%;
-	z-index: 10;
-	top: -17px;
-	left: 0px;
-
-	background: linear-gradient(
-		0deg,
-		rgba(255, 255, 255, 0) 25%,
-		${(props) => props.theme.backgrounds.primary} 50%,
-		rgba(255, 255, 255, 0) 75%
-	);
-`;
-
-export const ContainerTitle = styled.div`
-	display: flex;
-	align-items: center;
-	height: 20%;
-`;
-
-export const Title = styled.h2`
-	position: relative;
-	margin: 30px;
-	font-size: 40px;
-	width: max-content;
-
-	:after {
-		content: '';
-		height: 15px;
-		position: absolute;
-		bottom: -10px;
-		left: 0;
-		right: 0;
-		background-image: linear-gradient(
-			0deg,
-			rgba(255, 255, 255, 0) 25%,
-			${(props) => props.theme.backgrounds.secondary} 50%,
-			rgba(255, 255, 255, 0) 75%
-		);
-	}
-	@media ${device.mobileS} {
-		font-size: 30px;
-	}
-	@media ${device.tablet} {
-		font-size: 40px;
-	}
-`;
 
 export const ContainerContents = styled.div`
 	display: flex;
@@ -82,18 +33,34 @@ export const ContainerDescription = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
-	padding: 10px;
-	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	@media ${device.mobileXS} {
+		font-size: 14px;
+	}
+	@media ${device.tablet} {
+		font-size: 16px;
+	}
+	@media ${device.laptop} {
+		font-size: 20px;
+	}
 
 	h2 {
 		margin: 0px;
-		padding: 10px;
+		padding: 10px 0px 10px 5px;
 	}
 	p {
 		font-size: 20px;
 		margin: 0px;
-		padding: 0px 30px;
+		@media ${device.mobileXS} {
+			font-size: 14px;
+		}
+		@media ${device.tablet} {
+			font-size: 16px;
+		}
+		@media ${device.laptop} {
+			font-size: 20px;
+		}
 	}
 
 	@media ${device.mobileXS} {
@@ -130,7 +97,7 @@ export const ContainerImg = styled.div`
 	}
 	@media ${device.tablet} {
 		flex-wrap: no-wrap;
-		width: auto;
+		width: 50%;
 		height: auto;
 		padding: 0px 20px;
 	}

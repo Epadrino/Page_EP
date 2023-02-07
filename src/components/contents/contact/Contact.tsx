@@ -1,51 +1,52 @@
 import { IconMail } from '@/components/icons/IconMail';
+import { LayoutPage } from '@/components/layout/LayoutPage';
 import React from 'react';
 
-import {
-	Box,
-	Container,
-	ContainerTitle,
-	Form,
-	Img,
-	Section,
-	Title,
-} from './contactStyled';
+import { Box, Form, Img, SectionMail, SectionForm } from './contactStyled';
 
 export const Contact = () => {
 	return (
-		<Container>
-			<ContainerTitle>
-				<Title>Contactame</Title>
-			</ContainerTitle>
+		<LayoutPage title="CONTÁCTAME">
 			<Box>
-				<Section>
+				<SectionMail>
+					<p>
+						Escríbeme a través del siguiente formulario o envíame un correo
+						electrónico a{' '}
+						<a href="mailto:epadrinoa@gmail.com">
+							<b>epadrinoa@gmail.com</b>
+						</a>
+					</p>
+
 					<Img>
 						<IconMail
-							width="35vh"
-							height="35vh"
+							width="100%"
+							height="100%"
 						/>
 					</Img>
-				</Section>
-				<Section>
+				</SectionMail>
+				<SectionForm>
 					<Form>
+						<label htmlFor="nombre">Nombre:</label>
 						<input
 							type="text"
-							placeholder="Nombre"
+							placeholder="ingresa tu Nombre"
 							required
 							minLength={4}
 						/>
+						<label htmlFor="nombre">Direcion de correo electronico:</label>
 						<input
 							type="email"
-							placeholder="Correo@ejemplo.com"
+							placeholder="Ingresa tu correo"
 							required
 							minLength={4}
 						/>
+						<label htmlFor="nombre">Mensaje:</label>
 						<textarea
 							name="sms"
 							id="sms"
 							cols={30}
 							rows={10}
-							placeholder="Breve Comentario"
+							placeholder="Ingresa un breve comentario"
 							autoCapitalize="words"
 							minLength={4}
 							required
@@ -55,8 +56,8 @@ export const Contact = () => {
 							type="submit"
 						/>
 					</Form>
-				</Section>
+				</SectionForm>
 			</Box>
-		</Container>
+		</LayoutPage>
 	);
 };

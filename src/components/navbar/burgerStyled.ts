@@ -5,8 +5,8 @@ export const StyledBurger = styled.div<{ open: boolean }>`
 	width: 2rem;
 	height: 2rem;
 	position: fixed;
-	top: 15px;
-	right: 20px;
+	top: 33px;
+	right: 25px;
 	z-index: 20;
 	display: none;
 	@media ${device.menu} {
@@ -25,8 +25,7 @@ export const StyledBurger = styled.div<{ open: boolean }>`
 			transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
 		}
 		&:nth-child(2) {
-			transform: ${({ open }) =>
-				open ? 'translateX(100%)' : 'translateX(0)'};
+			transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
 			opacity: ${({ open }) => (open ? 0 : 1)};
 		}
 		&:nth-child(3) {

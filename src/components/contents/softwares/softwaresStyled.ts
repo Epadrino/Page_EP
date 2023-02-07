@@ -3,48 +3,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	flex-direction: column;
-	position: relative;
-	padding: 20px 40px;
-	height: 650px;
-	background: ${(props) => props.theme.backgrounds.primary};
-	z-index: 10;
-`;
-
-export const ContainerTitle = styled.div`
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	height: 20%;
-`;
-
-export const Title = styled.h2`
-	position: relative;
-	margin: 30px;
-	font-size: 40px;
-
-	:after {
-		content: '';
-		height: 15px;
-		position: absolute;
-		bottom: -10px;
-		left: 0;
-		right: 0;
-		background-image: linear-gradient(
-			0deg,
-			rgba(255, 255, 255, 0) 25%,
-			${(props) => props.theme.backgrounds.secondary} 50%,
-			rgba(255, 255, 255, 0) 75%
-		);
-	}
-	@media ${device.mobileS} {
-		font-size: 30px;
-	}
-	@media ${device.tablet} {
-		width: max-content;
-		font-size: 40px;
-	}
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 `;
 
 export const ContainerLogos = styled.div`
@@ -52,9 +13,24 @@ export const ContainerLogos = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 20px;
-	width: 100%;
-	height: 60%;
+	gap: 10%;
+	width: 80%;
+	height: 50%;
+	@media ${device.mobileS} {
+		width: 100%;
+	}
+	@media ${device.tablet} {
+		width: 80%;
+	}
+	@media ${device.laptop} {
+		width: 80%;
+	}
+	@media ${device.laptopL} {
+		width: 80%;
+	}
+	@media ${device.desktop} {
+		width: 70%;
+	}
 `;
 
 export const ContainerLogo = styled.div`
@@ -77,8 +53,7 @@ export const ContainerLogo = styled.div`
 	:hover {
 		transform: translateY(-20px);
 
-		box-shadow: 5px 10px 10px
-			${(props) => props.theme.backgrounds.secondary};
+		box-shadow: 5px 10px 10px ${(props) => props.theme.backgrounds.secondary};
 	}
 	@media ${device.mobileS} {
 		width: 100px;

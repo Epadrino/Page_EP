@@ -1,22 +1,17 @@
+import { LayoutPage } from '@/components/layout/LayoutPage';
 import Image from 'next/image';
 import React from 'react';
 import {
 	BoxContend,
 	BoxLogo,
 	Card,
-	Container,
 	ContainerCard,
-	ContainerTitle,
 	Logo,
-	Title,
 } from './briefcaseStyled';
 
 export const Briefcase = () => {
 	return (
-		<Container>
-			<ContainerTitle>
-				<Title>Portafolio</Title>
-			</ContainerTitle>
+		<LayoutPage title="PORTAFOLIO">
 			<ContainerCard>
 				<Card>
 					<BoxLogo>
@@ -150,6 +145,6 @@ export const Briefcase = () => {
 					</BoxContend>
 				</Card>
 			</ContainerCard>
-		</Container>
+		</LayoutPage>
 	);
 };

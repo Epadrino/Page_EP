@@ -4,44 +4,61 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 0 40px;
-	height: 94vh;
+
+	height: 100%;
 	background: rgba(0, 0, 0, 0);
 	position: relative;
 	z-index: 10;
 `;
+
+export const Box = styled.div`
+	position: relative;
+	width: 100%;
+`;
 export const ContainerImg = styled.div`
-	position: absolute;
-	position: fixed;
 	object-fit: cover;
+	position: fixed;
+
 	top: 0;
 	left: 0;
-	width: 100%;
-	min-height: 500px;
-	height: 100%;
+	width: 100vw;
+	height: 85vh;
 	z-index: 1;
+	@media ${device.mobileS} {
+		min-height: 500px;
+	}
+	@media ${device.tablet} {
+		min-height: 500px;
+	}
 `;
-
 export const ContainerText = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	z-index: 20;
-	position: absolute;
-	height: 90vh;
-	padding-left: 10vw;
+	height: 85vh;
+
 	h1 {
 		color: ${(props) => props.theme.colors.tertiary};
 		font-weight: 900;
 		@media ${device.mobileS} {
-			font-size: 300%;
+			padding-left: 10vw;
 			width: 80vw;
+			font-size: 40px;
 		}
 		@media ${device.tablet} {
+			padding-left: 10vw;
 			width: 50vw;
-			font-size: 70px;
+			font-size: 35px;
 		}
+		@media ${device.laptop} {
+			padding-left: 10vw;
+			width: 50vw;
+			font-size: 35px;
+		}
+
 		@media ${device.desktop} {
+			padding-left: 10vw;
 			width: 50vw;
 			font-size: 70px;
 		}
@@ -49,12 +66,18 @@ export const ContainerText = styled.div`
 	h2 {
 		color: ${(props) => props.theme.colors.tertiary};
 		font-weight: 700;
-		font-size: 20px;
-	}
-`;
 
-export const Title = styled.h1``;
-export const SubTitle = styled.h2`
-	font-weight: 700;
-	font-size: 20px;
+		@media ${device.mobileS} {
+			padding-left: 10vw;
+			font-size: 20px;
+		}
+		@media ${device.tablet} {
+			padding-left: 10vw;
+			font-size: 20px;
+		}
+		@media ${device.desktop} {
+			padding-left: 10vw;
+			font-size: 20px;
+		}
+	}
 `;
