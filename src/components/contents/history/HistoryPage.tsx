@@ -43,12 +43,11 @@ export const HistoryPage = () => {
 					<h2>Eduardo E. Padrino A.</h2>
 
 					<p>
-						un nómada digital alojado en Venezuela, actualmente me identifico
-						como Front-end Developer autodidacta. Me encanta aprender nuevas
-						tecnologías en plataformas como Platzi, Udemy y Youtube, sobre
-						WordPress, HTML, CSS, React, Styled Componets, Next.js, y continúo
-						ampliando y consolidando mi formación con el fin de garantizar la
-						mejor experiencia para el usuario final.
+						EDUARDO PADRINO - Nómada digital, "front-end developer" autodidacta.
+						Aprendo nuevas tecnologías en Platzi, Udemy sobre WordPress, HTML,
+						CSS, React, Styled Components, Next.js. Actualmente continuo
+						ampliando y consolidando mi formación, para brindar a todos los
+						usuarios la mejor experiencia.
 					</p>
 				</ContainerDescription>
 			</ContainerContents>

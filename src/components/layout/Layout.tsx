@@ -10,7 +10,6 @@ import { Footer, Header, SectionRigth, SectionLefth } from './layoutStyled';
 interface Props {
 	title?: string;
 }
-
 export const Layout: FC<PropsWithChildren<Props>> = ({ children, title }) => {
 	return (
 		<>

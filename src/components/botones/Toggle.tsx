@@ -13,17 +13,17 @@ export const Toggle = () => {
 		<SwitchButtom>
 			<SwitchButtonLabel
 				onClick={changeTheme}
-				open={theme === 'dark'}
+				open={theme === 'light'}
 				className="switch-button__label"
 			>
-				<Box open={theme === 'dark'}>
-					{theme === 'dark' ? (
-						<IconMoon
+				<Box open={theme === 'light'}>
+					{theme === 'light' ? (
+						<IconSun
 							width="50%"
 							height="50%"
 						/>
 					) : (
-						<IconSun
+						<IconMoon
 							width="50%"
 							height="50%"
 						/>
@@ -46,9 +46,9 @@ const Box = styled.div<{ open: boolean }>`
 	position: absolute;
 	width: 1.5rem;
 	height: 1.5rem;
-	transform: translateX(${({ open }) => (open ? '1.25em' : '0em')});
+	transform: translateX(${({ open }) => (open ? '0em' : '1.25em')});
 	left: 5px;
-	top: ${({ open }) => (open ? '3px' : '4px')};
+	top: ${({ open }) => (open ? '4px' : '3px')};
 `;
 
 const SwitchButtonLabel = styled.div<{ open: boolean }>`
@@ -63,7 +63,7 @@ const SwitchButtonLabel = styled.div<{ open: boolean }>`
 	:before {
 		content: '';
 		transition: 1s;
-		transform: translateX(${({ open }) => (open ? '1.25em' : '0em')});
+		transform: translateX(${({ open }) => (open ? '0em' : '1.25em')});
 		display: block;
 		position: absolute;
 		width: 1.5rem;

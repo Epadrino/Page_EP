@@ -2,7 +2,7 @@ import { FC, useReducer, PropsWithChildren } from 'react';
 
 import { ThemeProvider } from 'styled-components';
 
-import dark from '@/styles/themes/dark';
+import light from '@/styles/themes/light';
 import { UIContext, uiReducer } from './';
 
 export interface UIState {
@@ -13,8 +13,8 @@ export interface UIState {
 
 const UI_INITIAL_STATE: UIState = {
 	user: false,
-	theme: 'dark',
-	themeJson: dark,
+	theme: 'light',
+	themeJson: light,
 };
 
 export const UIProvider: FC<PropsWithChildren> = ({ children }) => {
@@ -22,9 +22,9 @@ export const UIProvider: FC<PropsWithChildren> = ({ children }) => {
 
 	const changeTheme = () => {
 		if (state.theme)
-			state.theme === 'dark'
-				? dispatch({ type: '[UI] - ThemeLigth' })
-				: dispatch({ type: '[UI] - ThemeDark' });
+			state.theme === 'light'
+				? dispatch({ type: '[UI] - ThemeDark' })
+				: dispatch({ type: '[UI] - ThemeLight' });
 	};
 
 	return (

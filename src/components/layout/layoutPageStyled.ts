@@ -28,7 +28,7 @@ export const Separator = styled.div`
 		rgba(255, 255, 255, 0) 25%,
 		${(props) => props.theme.backgrounds.primary} 50%,
 		rgba(255, 255, 255, 0) 75%
-	); ;
+	);
 `;
 
 export const ContainerTitle = styled.div`

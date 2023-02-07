@@ -2,14 +2,14 @@ import dark from '@/styles/themes/dark';
 import light from '@/styles/themes/light';
 import { UIState } from './';
 
-type UIType = { type: '[UI] - ThemeDark' } | { type: '[UI] - ThemeLigth' };
+type UIType = { type: '[UI] - ThemeDark' } | { type: '[UI] - ThemeLight' };
 
 export const uiReducer = (state: UIState, action: UIType): UIState => {
 	switch (action.type) {
-		case '[UI] - ThemeLigth':
+		case '[UI] - ThemeLight':
 			return {
 				...state,
-				theme: 'ligth',
+				theme: 'light',
 				themeJson: light,
 			};
 
