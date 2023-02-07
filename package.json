@@ -17,6 +17,7 @@
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-particles": "^2.8.0",
+		"react-particles-js": "^3.6.0",
 		"styled-components": "^5.3.6",
 		"tsparticles": "^2.8.0",
 		"tsparticles-engine": "^2.8.0",
@@ -28,5 +29,6 @@
 	},
 	"resolutions": {
 		"styled-components": "^5"
-	}
+	},
+	"packageManager": "yarn@3.4.1"
 }
