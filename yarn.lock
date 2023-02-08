@@ -338,13 +338,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsparticles/engine@npm:^3.0.0-alpha.1":
-  version: 3.0.0-alpha.1
-  resolution: "@tsparticles/engine@npm:3.0.0-alpha.1"
-  checksum: b2f8ab88d82ace0471aa581e87526377f40adc5f70d1ce5560574c0444cc256ad619aebd84d8c88b35c1710e633e26759ff893ce549c94b762fc6150c33c5e46
-  languageName: node
-  linkType: hard
-
 "@types/hoist-non-react-statics@npm:*":
   version: 3.3.1
   resolution: "@types/hoist-non-react-statics@npm:3.3.1"
@@ -717,7 +710,6 @@ __metadata:
   resolution: "portafolioep@workspace:."
   dependencies:
     "@next/font": ^13.1.6
-    "@tsparticles/engine": ^3.0.0-alpha.1
     "@types/node": 18.11.18
     "@types/react": 18.0.27
     "@types/react-dom": 18.0.10
@@ -729,6 +721,7 @@ __metadata:
     react-particles: ^2.8.0
     styled-components: ^5.3.6
     tsparticles: ^2.8.0
+    tsparticles-engine: ^2.8.0
     typescript: 4.9.4
   languageName: unknown
   linkType: soft
