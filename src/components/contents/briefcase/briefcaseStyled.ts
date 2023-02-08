@@ -21,7 +21,7 @@ export const Card = styled.div`
 	border-radius: 50px;
 
 	height: 400px;
-	transition-duration: 1.5s;
+	transition-duration: 200ms;
 	:hover {
 		transform: translateY(-10px);
 		box-shadow: 0px 5px 5px ${(props) => props.theme.backgrounds.secondary};
@@ -74,7 +74,7 @@ export const BoxContend = styled.div`
 			box-shadow: 0.5px 0.5px 5px ${(props) => props.theme.colors.primary};
 			padding: 3px 5px;
 			border-radius: 5px;
-			transition-duration: 1s;
+			transition-duration: 200ms;
 			:link,
 			:visited,
 			:focus {
