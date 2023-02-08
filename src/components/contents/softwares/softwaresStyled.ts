@@ -49,7 +49,7 @@ export const ContainerLogo = styled.div`
 		padding-bottom: 100%;
 	}
 
-	transition-duration: 2s;
+	transition-duration: 200ms;
 	:hover {
 		transform: translateY(-20px);
 

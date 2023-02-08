@@ -143,6 +143,9 @@ export const AnimationParticles = () => {
 								random: false,
 								speed: { min: 1, max: 5 },
 								straight: false,
+								gravity: {
+									maxSpeed: 10,
+								},
 							},
 							number: {
 								density: {
