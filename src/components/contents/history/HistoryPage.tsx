@@ -13,7 +13,10 @@ import {
 
 export const HistoryPage = () => {
 	return (
-		<LayoutPage title="ACERCA DE MI">
+		<LayoutPage
+			title="ACERCA DE MI"
+			id="conoceme"
+		>
 			<ContainerContents>
 				<ContainerImg>
 					<ContainerLogo>

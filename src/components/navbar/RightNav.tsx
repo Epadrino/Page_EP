@@ -11,19 +11,34 @@ export const RightNav: FC<PropsWithChildren<Props>> = ({ open }) => {
 	return (
 		<Nav open={open}>
 			<div>
-				<EnlaceMenu text='Inicio' href='init' />
+				<EnlaceMenu
+					text="Inicio"
+					href="#inicio"
+				/>
 			</div>
 			<div>
-				<EnlaceMenu text='Conóceme' href='' />
+				<EnlaceMenu
+					text="Conóceme"
+					href="#conoceme"
+				/>
 			</div>
 			<div>
-				<EnlaceMenu text='Herramientas' href='' />
+				<EnlaceMenu
+					text="Herramientas"
+					href="#herramientas"
+				/>
 			</div>
 			<div>
-				<EnlaceMenu text='Portafolio' href='' />
+				<EnlaceMenu
+					text="Portafolio"
+					href="#portafolio"
+				/>
 			</div>
 			<div>
-				<EnlaceMenu text='Contactame' href='' />
+				<EnlaceMenu
+					text="Contactame"
+					href="#contactame"
+				/>
 			</div>
 		</Nav>
 	);

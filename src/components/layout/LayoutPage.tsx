@@ -8,13 +8,15 @@ import {
 
 interface Props {
 	title: string;
+	id: string;
 }
 export const LayoutPage: FC<PropsWithChildren<Props>> = ({
 	title,
 	children,
+	id,
 }) => {
 	return (
-		<Container>
+		<Container id={id}>
 			<Separator />
 			<ContainerTitle>
 				<Title>{title}</Title>

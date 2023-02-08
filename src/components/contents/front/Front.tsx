@@ -7,6 +7,7 @@ import { AnimationParticles } from '@/components/praticles/AnimationParticles';
 export const Front = () => {
 	return (
 		<Container>
+			<div id="inicio"></div>
 			<Container>
 				<ContainerText>
 					<div>

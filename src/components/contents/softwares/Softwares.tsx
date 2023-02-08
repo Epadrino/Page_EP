@@ -11,7 +11,10 @@ import {
 
 export const Softwares = () => {
 	return (
-		<LayoutPage title="HERRAMIENTAS DE TRABAJO">
+		<LayoutPage
+			title="HERRAMIENTAS DE TRABAJO"
+			id="herramientas"
+		>
 			<Container>
 				<ContainerLogos>
 					<ContainerLogo>

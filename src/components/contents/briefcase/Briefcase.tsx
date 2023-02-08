@@ -11,7 +11,10 @@ import {
 
 export const Briefcase = () => {
 	return (
-		<LayoutPage title="PORTAFOLIO">
+		<LayoutPage
+			title="PORTAFOLIO"
+			id="portafolio"
+		>
 			<ContainerCard>
 				<Card>
 					<BoxLogo>

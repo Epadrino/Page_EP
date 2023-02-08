@@ -6,7 +6,10 @@ import { Box, Form, Img, SectionMail, SectionForm } from './contactStyled';
 
 export const Contact = () => {
 	return (
-		<LayoutPage title="CONTÁCTAME">
+		<LayoutPage
+			title="CONTÁCTAME"
+			id="contactame"
+		>
 			<Box>
 				<SectionMail>
 					<p>
