@@ -71,9 +71,10 @@ export const BoxContend = styled.div`
 			margin-left: 0.625%;
 			text-align: center;
 			color: ${(props) => props.theme.colors.primary};
-			border: 1px solid;
+			box-shadow: 0.5px 0.5px 5px ${(props) => props.theme.colors.primary};
 			padding: 3px 5px;
 			border-radius: 5px;
+			transition-duration: 1s;
 			:link,
 			:visited,
 			:focus {
@@ -111,8 +112,11 @@ export const BoxLogo = styled.div`
 	}
 `;
 export const Logo = styled.div`
-	border-radius: 50px;
+	border-radius: 10px;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 	height: 100%;
+
+	box-shadow: 0px 0px 5px ${(props) => props.theme.colors.primary};
 `;

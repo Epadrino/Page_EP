@@ -38,17 +38,19 @@ export const HistoryPage = () => {
 					</ContainerLogo>
 				</ContainerImg>
 				<ContainerDescription>
-					<p>Saludos mi nombre es </p>
-
-					<h2>Eduardo E. Padrino A.</h2>
-
 					<p>
-						EDUARDO PADRINO - Nómada digital, "front-end developer" autodidacta.
-						Aprendo nuevas tecnologías en Platzi, Udemy sobre WordPress, HTML,
-						CSS, React, Styled Components, Next.js. Actualmente continuo
-						ampliando y consolidando mi formación, para brindar a todos los
-						usuarios la mejor experiencia.
+						Autodidacta, desde 2022 he trabajado con pequeños equipos ágiles de
+						proyectos.
 					</p>
+					<p>
+						Hábil y comprometido con las nuevas tecnologías en Platzi, Udemy
+						sobre WordPress, HTML, CSS, React, Styled Components, Next.js.
+					</p>
+					<p>
+						Valoro los detalles que importan, con experiencia y el entusiasmo
+						puedo traer tus visiones a la vida de la manera que quieras.
+					</p>
+					<p>¿Tienes un proyecto interesante? Vamos a hablar.</p>
 				</ContainerDescription>
 			</ContainerContents>
 		</LayoutPage>

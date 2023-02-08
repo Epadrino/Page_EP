@@ -51,7 +51,7 @@ export const ContainerDescription = styled.div`
 	}
 	p {
 		font-size: 20px;
-		margin: 0px;
+		margin: 15px;
 		@media ${device.mobileXS} {
 			font-size: 14px;
 		}

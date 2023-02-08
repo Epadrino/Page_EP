@@ -27,7 +27,8 @@ export const Briefcase = () => {
 					<BoxContend>
 						<h4>Landing Page WordPress</h4>
 						<p>
-							Pagina creada comercio ubicado en valencia España <br />
+							Pagina creada para Rodauce comercio de comida ubicado en valencia
+							España <br />
 							<br />
 							ir a:{' '}
 							<a
