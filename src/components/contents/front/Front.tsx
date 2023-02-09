@@ -19,6 +19,7 @@ export const Front = () => {
 			<Box>
 				<ContainerImg>
 					<AnimationParticles />
+
 					{/* <Image
 						src="/images/fondo-azul-2.jpg"
 						alt="fondo"

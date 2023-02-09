@@ -29,6 +29,11 @@ export const ContainerImg = styled.div`
 	@media ${device.tablet} {
 		min-height: 500px;
 	}
+	#particles-js {
+		height: 800px;
+		width: 100%;
+		background: black;
+	}
 `;
 export const ContainerText = styled.div`
 	display: flex;
