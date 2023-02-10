@@ -24,8 +24,7 @@
 		"typescript": "4.9.4"
 	},
 	"devDependencies": {
-		"@types/styled-components": "^5.1.26",
-		"@types/styled-components-react-native": "^5.2.0"
+		"@types/styled-components": "^5.1.26"
 	},
 	"resolutions": {
 		"styled-components": "^5"

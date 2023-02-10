@@ -371,15 +371,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-native@npm:^0.70":
-  version: 0.70.9
-  resolution: "@types/react-native@npm:0.70.9"
-  dependencies:
-    "@types/react": "*"
-  checksum: 52b362f518c8a912174ae7cda1b20532bee11c2767794efcc0300650b750f72bcd8852435105559155f202504a742fe6e50f4e3cc4c1a9836dea9db132410ce3
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:*, @types/react@npm:18.0.27":
   version: 18.0.27
   resolution: "@types/react@npm:18.0.27"
@@ -398,18 +389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components-react-native@npm:^5.2.0":
-  version: 5.2.1
-  resolution: "@types/styled-components-react-native@npm:5.2.1"
-  dependencies:
-    "@types/react": "*"
-    "@types/react-native": ^0.70
-    "@types/styled-components": "*"
-  checksum: 1c54606a65c65db5be51782ec8eff1689582fc9b39396fbdbb2bba505b8f31ed52bf9478a10dd765fd0aeb8e08061f4853f85b75fcce27d041b1194c4d5879f0
-  languageName: node
-  linkType: hard
-
-"@types/styled-components@npm:*, @types/styled-components@npm:^5.1.26":
+"@types/styled-components@npm:^5.1.26":
   version: 5.1.26
   resolution: "@types/styled-components@npm:5.1.26"
   dependencies:
@@ -691,6 +671,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"page_ep@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "page_ep@workspace:."
+  dependencies:
+    "@next/font": ^13.1.6
+    "@types/node": 18.11.18
+    "@types/react": 18.0.27
+    "@types/react-dom": 18.0.10
+    "@types/styled-components": ^5.1.26
+    next: 13.1.6
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-particles: ^2.8.0
+    react-tsparticles: ^2.8.0
+    styled-components: ^5.3.6
+    tsparticles: ^2.8.0
+    tsparticles-engine: ^2.8.0
+    typescript: 4.9.4
+  languageName: unknown
+  linkType: soft
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -704,28 +705,6 @@ __metadata:
   checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
   languageName: node
   linkType: hard
-
-"portafolioep@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "portafolioep@workspace:."
-  dependencies:
-    "@next/font": ^13.1.6
-    "@types/node": 18.11.18
-    "@types/react": 18.0.27
-    "@types/react-dom": 18.0.10
-    "@types/styled-components": ^5.1.26
-    "@types/styled-components-react-native": ^5.2.0
-    next: 13.1.6
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-particles: ^2.8.0
-    react-tsparticles: ^2.8.0
-    styled-components: ^5.3.6
-    tsparticles: ^2.8.0
-    tsparticles-engine: ^2.8.0
-    typescript: 4.9.4
-  languageName: unknown
-  linkType: soft
 
 "postcss-value-parser@npm:^4.0.2":
   version: 4.2.0
