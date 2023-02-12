@@ -5,10 +5,7 @@ export const Box = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	min-height: 60vh;
+	align-items: initial;
 
 	@media ${device.mobileS} {
 		gap: 0px;
@@ -26,6 +23,17 @@ export const Box = styled.div`
 		flex-direction: row;
 	}
 `;
+
+export const Container = styled.div`
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 60vh;
+`;
+
 export const SectionMail = styled.section`
 	display: flex;
 	flex-direction: column;

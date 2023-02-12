@@ -132,12 +132,12 @@ export const AnimationParticles = () => {
 							move: {
 								direction: 'none',
 								enable: true,
-								random: false,
-								speed: { min: 1, max: 5 },
-								straight: false,
-								gravity: {
-									maxSpeed: 10,
+								outModes: {
+									default: 'bounce',
 								},
+								random: false,
+								speed: 1,
+								straight: false,
 							},
 							number: {
 								density: {
