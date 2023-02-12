@@ -25,6 +25,7 @@ export const UIProvider: FC<PropsWithChildren> = ({ children }) => {
 			state.theme === 'light'
 				? dispatch({ type: '[UI] - ThemeDark' })
 				: dispatch({ type: '[UI] - ThemeLight' });
+		localStorage.setItem('theme', state.theme);
 	};
 
 	return (

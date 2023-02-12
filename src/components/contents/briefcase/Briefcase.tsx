@@ -14,23 +14,14 @@ import {
 } from './briefcaseStyled';
 
 export const Briefcase = () => {
-	console.log(BriefcaseData);
 	return (
-		<LayoutPage
-			title="PORTAFOLIO"
-			id="portafolio"
-		>
+		<LayoutPage title="PORTAFOLIO" id="portafolio">
 			<ContainerCard>
 				{BriefcaseData.projects.map((projects) => (
-					<Card>
+					<Card key={projects.key}>
 						<BoxLogo>
 							<Logo>
-								<Image
-									src={projects.img}
-									alt="img"
-									fill
-									sizes="100vw"
-								/>
+								<Image src={projects.img} alt="img" fill sizes="40vw" />
 							</Logo>
 						</BoxLogo>
 						<BoxContend>
@@ -39,10 +30,7 @@ export const Briefcase = () => {
 								{projects.description} <br />
 								<br />
 								ir a:{' '}
-								<a
-									href={projects.url}
-									target="_blank"
-								>
+								<a href={projects.url} target="_blank">
 									{projects.title}
 								</a>
 							</p>

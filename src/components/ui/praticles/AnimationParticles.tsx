@@ -8,8 +8,6 @@ export const AnimationParticles = () => {
 	const { theme } = useContext(UIContext);
 
 	const particlesInit = useCallback(async (engine: Engine) => {
-		console.log(engine);
-
 		await loadFull(engine);
 	}, []);
 

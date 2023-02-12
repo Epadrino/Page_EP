@@ -1,4 +1,5 @@
 interface SeedBriefcase {
+	key: number;
 	titleDescription: string;
 	description: string;
 	img: string;
@@ -13,6 +14,7 @@ interface SeedData {
 export const BriefcaseData: SeedData = {
 	projects: [
 		{
+			key: 1,
 			title: 'Rodauce',
 			titleDescription: 'Landing Page WordPress',
 			description:
@@ -21,6 +23,7 @@ export const BriefcaseData: SeedData = {
 			url: 'http://rodauce.es/',
 		},
 		{
+			key: 2,
 			title: 'Pokemons',
 			titleDescription: 'Probando API Pokemos',
 			description: 'Creación de una pagina utilizando la PokéAPI con Next.js',
@@ -28,6 +31,7 @@ export const BriefcaseData: SeedData = {
 			url: 'https://pokemon-app-steel-xi.vercel.app/',
 		},
 		{
+			key: 3,
 			title: 'Brosmind',
 			titleDescription: 'Landing Page',
 			description: 'Pagina hecha para NOJPG para la venta de NFTS',
@@ -35,6 +39,7 @@ export const BriefcaseData: SeedData = {
 			url: 'https://brosmind.notonlyajpg.com/',
 		},
 		{
+			key: 4,
 			title: 'Waleska',
 			titleDescription: 'Landing Page Next.js',
 			description: 'Pagina hecha para NOJPG para la venta de NFTS',
@@ -42,6 +47,7 @@ export const BriefcaseData: SeedData = {
 			url: 'https://waleska.notonlyajpg.com//',
 		},
 		{
+			key: 5,
 			title: 'Tony Emotion',
 			titleDescription: 'Landing Page WordPress',
 			description: 'Pagina hecha para Tony Emotions',

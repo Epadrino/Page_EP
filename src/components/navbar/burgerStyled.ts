@@ -1,7 +1,7 @@
 import { device } from '@/util/devices';
 import styled from 'styled-components';
 
-export const StyledBurger = styled.div<{ open: boolean }>`
+export const StyledBurger = styled.div<{ open: boolean; open2: string }>`
 	width: 2rem;
 	height: 2rem;
 	position: fixed;
@@ -17,7 +17,7 @@ export const StyledBurger = styled.div<{ open: boolean }>`
 	div {
 		width: 2rem;
 		height: 0.25rem;
-		background-color: ${({ open }) => (open ? '#fff' : '#fff')};
+		background: ${({ open2 }) => (open2 === 'light' ? '#000' : '#fff')};
 		border-radius: 10px;
 		transform-origin: 1px;
 		transition: all 0.3s linear;
