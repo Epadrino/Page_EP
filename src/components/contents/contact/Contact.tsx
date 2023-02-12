@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Img, SectionMail, SectionWhasApp } from './contactStyled';
 import { LayoutPage } from '@/components/layout/LayoutPage';
-import { IconWhatsApp, IconMail } from '@/components/ui/icons';
+import { IconMail, IconWhatsApp } from '@/components/ui/icons';
 
 export const Contact = () => {
 	return (
