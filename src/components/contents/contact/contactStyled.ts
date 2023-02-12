@@ -5,8 +5,10 @@ export const Box = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100%;
+	min-height: 60vh;
 
 	@media ${device.mobileS} {
 		gap: 0px;
