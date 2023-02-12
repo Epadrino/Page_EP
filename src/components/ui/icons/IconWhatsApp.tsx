@@ -9,7 +9,7 @@ interface Props {
 	height: string;
 }
 
-export const SVG = styled.svg`
+const SVG = styled.svg`
 	g {
 		fill: ${(props) => props.theme.backgrounds.secondary};
 
