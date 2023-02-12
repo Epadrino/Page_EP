@@ -29,6 +29,7 @@ export const SectionMail = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100%;
 
 	position: relative;
 
@@ -41,8 +42,14 @@ export const SectionMail = styled.section`
 	@media ${device.desktop} {
 		width: 50%;
 	}
+	:hover {
+		a {
+			text-shadow: 1px 1px 2px #34b7f1;
+		}
+	}
 	div {
-		width: 80%;
+		width: 100%;
+		height: 100%;
 	}
 	p {
 		margin: 0;
@@ -61,10 +68,8 @@ export const SectionMail = styled.section`
 		}
 	}
 	a {
-		transition-duration: 1s;
 		text-decoration: none;
 		:focus {
-			border-bottom: 1px solid;
 			background: ${(props) => props.theme.backgrounds.header};
 		}
 
@@ -74,17 +79,17 @@ export const SectionMail = styled.section`
 		:visited {
 			color: ${(props) => props.theme.colors.primary};
 		}
-		:hover {
-			border-bottom: 1px solid;
-			border-radius: 5px;
-			background: ${(props) => props.theme.backgrounds.primary};
-			color: ${(props) => props.theme.colors.secondary};
-		}
-		${Box}:hover & {
-			color: #a3ff0f;
+	}
+`;
+
+export const SectionWhasApp = styled(SectionMail)`
+	:hover {
+		a {
+			text-shadow: 1px 1px 2px #25d366;
 		}
 	}
 `;
+
 export const SectionForm = styled.section`
 	display: flex;
 	flex-direction: column;
@@ -103,103 +108,13 @@ export const SectionForm = styled.section`
 	}
 `;
 
-export const Form = styled.form`
-	display: flex;
-	flex-direction: column;
-	border-top: 2px solid ${(props) => props.theme.backgrounds.secondary};
-	border-bottom: 2px solid ${(props) => props.theme.backgrounds.secondary};
-	border-radius: 20px;
-
-	background: ${(props) => props.theme.backgrounds.primary};
-
-	color: white;
-
-	@media ${device.mobileS} {
-		padding: 5px 30px;
-		width: 70vw;
-		height: 40vh;
-	}
-	@media ${device.tablet} {
-		padding: 20px 30px;
-		width: 80%;
-		height: 70%;
-	}
-	@media ${device.desktop} {
-		padding: 20px 30px;
-		width: 60%;
-		height: 70%;
-	}
-	label {
-		text-align: left;
-		margin-bottom: 3px;
-		@media ${device.mobileS} {
-			font-size: 12px;
-		}
-		@media ${device.tablet} {
-			font-size: 16px;
-		}
-	}
-	input {
-		border-radius: 5px;
-		width: 100%;
-		margin-bottom: 10px;
-		padding: 15px 0px;
-		background: ${(props) => props.theme.colors.secondary};
-		font-size: 16px;
-
-		color: ${(props) => props.theme.colors.primary};
-		:focus {
-			box-shadow: 0px 0px 10px ${(props) => props.theme.colors.primary};
-		}
-		::placeholder {
-			padding-left: 10px;
-		}
-		@media ${device.mobileS} {
-			padding: 10px 0px;
-			font-size: 12px;
-		}
-		@media ${device.tablet} {
-			padding: 15px 0px;
-			font-size: 16px;
-		}
-		@media ${device.desktop} {
-			padding: 15px 0px;
-			font-size: 16px;
-		}
-	}
-	textarea {
-		border-radius: 5px;
-		width: 100%;
-		height: 100%;
-
-		margin-bottom: 15px;
-		padding: 11px 0;
-		background: ${(props) => props.theme.colors.secondary};
-		color: ${(props) => props.theme.colors.primary};
-		font-size: 16px;
-
-		resize: none;
-		::placeholder {
-			padding-left: 10px;
-			font-family: '__Roboto_eb08c1', '__Roboto_Fallback_eb08c1';
-		}
-	}
-	.button {
-		display: block;
-		padding: auto;
-		margin: 0;
-		background: ${(props) => props.theme.backgrounds.secondary};
-		border: none;
-		color: ${(props) => props.theme.colors.secondary};
-	}
-`;
 export const Img = styled.div`
 	position: relative;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 20px;
+	padding: 20px;
 	border-radius: 20px;
 
 	@media ${device.mobileS} {

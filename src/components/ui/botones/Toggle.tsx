@@ -18,15 +18,9 @@ export const Toggle = () => {
 			>
 				<Box open={theme === 'light'}>
 					{theme === 'light' ? (
-						<IconSun
-							width="50%"
-							height="50%"
-						/>
+						<IconSun width="50%" height="50%" />
 					) : (
-						<IconMoon
-							width="50%"
-							height="50%"
-						/>
+						<IconMoon width="50%" height="50%" />
 					)}
 				</Box>
 			</SwitchButtonLabel>

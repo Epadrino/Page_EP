@@ -1,4 +1,4 @@
-import { IconWindow } from '@/components/icons/IconWindow';
+import { IconWindow } from '@/components/ui/icons/IconWindow';
 import { LayoutPage } from '@/components/layout/LayoutPage';
 import {
 	Container,
@@ -13,30 +13,18 @@ import {
 
 export const HistoryPage = () => {
 	return (
-		<LayoutPage
-			title="ACERCA DE MI"
-			id="conoceme"
-		>
+		<LayoutPage title="ACERCA DE MI" id="conoceme">
 			<ContainerContents>
 				<ContainerImg>
 					<ContainerLogo>
 						<Logo2>
-							<IconWindow
-								width="100%"
-								height="100%"
-							/>
+							<IconWindow width="100%" height="100%" />
 						</Logo2>
 						<Logo1>
-							<IconWindow
-								width="100%"
-								height="100%"
-							/>
+							<IconWindow width="100%" height="100%" />
 						</Logo1>
 						<Logo>
-							<IconWindow
-								width="100%"
-								height="100%"
-							/>
+							<IconWindow width="100%" height="100%" />
 						</Logo>
 					</ContainerLogo>
 				</ContainerImg>

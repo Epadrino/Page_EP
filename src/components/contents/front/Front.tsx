@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Container, Box, ContainerImg, ContainerText } from './frontStyled';
 
-import { AnimationParticles } from '@/components/praticles/AnimationParticles';
+import { AnimationParticles } from '@/components/ui/praticles/AnimationParticles';
 
 export const Front = () => {
 	return (
