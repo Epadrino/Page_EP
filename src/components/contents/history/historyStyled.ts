@@ -143,7 +143,7 @@ export const Logo = styled.div`
 	height: 50%;
 	border-radius: 50px;
 
-	transition-duration: 2s;
+	transition-duration: 200ms;
 	${ContainerContents}:hover & {
 		background-color: ${(props) => props.theme.backgrounds.tertiary};
 		width: 60%;
@@ -159,7 +159,7 @@ export const Logo1 = styled.div`
 	height: 50%;
 	border-radius: 50px;
 
-	transition-duration: 2s;
+	transition-duration: 200ms;
 	${ContainerContents}:hover & {
 		background-color: ${(props) => props.theme.backgrounds.tertiary};
 		width: 60%;
@@ -175,7 +175,7 @@ export const Logo2 = styled.div<{}>`
 	height: 50%;
 	border-radius: 50px;
 
-	transition-duration: 2s;
+	transition-duration: 200ms;
 	${ContainerContents}:hover & {
 		background-color: ${(props) => props.theme.backgrounds.tertiary};
 		width: 60%;
@@ -190,7 +190,7 @@ export const Logo3 = styled.div`
 	height: 50%;
 	${ContainerContents}:hover & {
 		animation-name: muve2;
-		animation-duration: 3s;
+		transition-duration: 200ms;
 		animation-iteration-count: 1;
 		animation-fill-mode: backwards;
 	}

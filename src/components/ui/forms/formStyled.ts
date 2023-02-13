@@ -48,7 +48,7 @@ export const Container = styled.form`
 
 		color: ${(props) => props.theme.colors.primary};
 		:focus {
-			box-shadow: 0px 0px 10px ${(props) => props.theme.colors.primary};
+			box-shadow: 0px 0px 10px ${(props) => props.theme.shadow.primary};
 		}
 		::placeholder {
 			padding-left: 10px;

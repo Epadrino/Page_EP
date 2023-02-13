@@ -53,7 +53,7 @@ export const ContainerLogo = styled.div`
 	:hover {
 		transform: translateY(-20px);
 
-		box-shadow: 5px 10px 10px ${(props) => props.theme.backgrounds.secondary};
+		box-shadow: 5px 10px 10px ${(props) => props.theme.shadow.primary};
 	}
 	@media ${device.mobileS} {
 		width: 100px;

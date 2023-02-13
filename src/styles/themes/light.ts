@@ -30,4 +30,9 @@ export default {
 		secondary: '',
 		tertiary: '',
 	},
+	shadow: {
+		primary: 'rgba(150,150,150,0.54)',
+		secondary: 'rgba(150,150,150,0.54)',
+		tertiary: 'rgba(150,150,150,0.54)',
+	},
 };

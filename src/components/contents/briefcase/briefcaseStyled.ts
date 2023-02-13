@@ -24,7 +24,7 @@ export const Card = styled.div`
 	transition-duration: 200ms;
 	:hover {
 		transform: translateY(-10px);
-		box-shadow: 0px 5px 5px ${(props) => props.theme.backgrounds.secondary};
+		box-shadow: 0px 5px 5px ${(props) => props.theme.shadow.primary};
 	}
 
 	@media ${device.mobileS} {
@@ -71,7 +71,7 @@ export const BoxContend = styled.div`
 			margin-left: 0.625%;
 			text-align: center;
 			color: ${(props) => props.theme.colors.primary};
-			box-shadow: 0.5px 0.5px 5px ${(props) => props.theme.colors.primary};
+			box-shadow: 0.5px 0.5px 5px ${(props) => props.theme.shadow.primary};
 			padding: 3px 5px;
 			border-radius: 5px;
 			transition-duration: 200ms;
@@ -118,5 +118,5 @@ export const Logo = styled.div`
 	width: 100%;
 	height: 100%;
 
-	box-shadow: 0px 0px 5px ${(props) => props.theme.colors.primary};
+	box-shadow: 0px 0px 5px ${(props) => props.theme.shadow.primary};
 `;

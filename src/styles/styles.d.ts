@@ -33,5 +33,10 @@ declare module 'styled-components' {
 			secondary: string;
 			tertiary: string;
 		};
+		shadow: {
+			primary: string;
+			secondary: string;
+			tertiary: string;
+		};
 	}
 }
