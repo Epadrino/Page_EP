@@ -48,10 +48,19 @@ export const ContainerText = styled.div`
 		justify-content: center;
 
 		background: rgba(26, 26, 27, 0.1);
-		width: 35%;
 
 		border-radius: 20px;
 		padding-left: 5%;
+
+		@media ${device.mobileS} {
+			width: 75vw;
+		}
+		@media ${device.tablet} {
+			width: 40vw;
+		}
+		@media ${device.laptop} {
+			width: 35vw;
+		}
 		h1 {
 			color: ${(props) => props.theme.colors.primary};
 			font-weight: 900;
