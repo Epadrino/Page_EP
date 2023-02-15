@@ -62,7 +62,8 @@ export const SectionMail = styled.section`
 		height: 100%;
 	}
 	p {
-		margin: 0;
+		margin: 0px;
+		padding: 10px 0px;
 
 		@media ${device.mobileS} {
 			width: 90%;
@@ -124,8 +125,8 @@ export const Img = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
-	border-radius: 20px;
+
+	border-radius: 0px;
 
 	@media ${device.mobileS} {
 		width: 20%;
