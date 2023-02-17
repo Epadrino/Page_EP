@@ -30,7 +30,7 @@ export const HistoryPage = () => {
 				</ContainerImg>
 				<ContainerDescription>
 					<p>
-						Autodidacta, desde 2022 he trabajado con pequeños equipos ágiles de
+						Autodidacta, desde 2019 he trabajado con pequeños equipos ágiles de
 						proyectos.
 					</p>
 					<p>
